@@ -1,0 +1,15 @@
+Find the closest decimal value
+[1] 1251
+[1] 2849
+[1] 3564099
+
+left_score match counting
+[1] 1239
+[1] 2849
+[1] 3529911
+
+Whittling/recursing
+[1] 2783
+[1] 1353
+> 2783*1353
+[1] 3765399
