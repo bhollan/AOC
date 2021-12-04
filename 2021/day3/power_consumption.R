@@ -30,6 +30,7 @@ numbers <- apply(bits, 1, strtoi, base=2)
 
 
 peel <- function(data, col_ind, CO2=FALSE){
+  print(nrow(data))
   if(nrow(data)==1){
     out <- unite(data[1,], col="final", sep="")
     return(strtoi(out$final, base=2))
@@ -52,6 +53,6 @@ peel <- function(data, col_ind, CO2=FALSE){
 
 O2 <- peel(data, 1, FALSE)
 CO2 <- peel(data, 1, TRUE)
-print(O2)
-print(CO2)
+# print(O2)
+# print(CO2)
 
