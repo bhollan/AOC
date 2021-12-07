@@ -21,6 +21,8 @@ maxX <- max(data$x1, data$x2)
 maxY <- max(data$y1, data$y2)
 
 seabed <- matrix(0, maxX, maxY)
+# colnames(seabed) <- "x"
+# rownames(seabed) <- "y"
 # vent_points <- data[which(data$Xdelta==0 | data$Ydelta==0),]
 vent_points <- data
 
@@ -48,4 +50,11 @@ for(n in 1:nrow(vent_points)){
 }
 
 
-print(length(which(seabed>1)))
+# print(length(which(seabed>1)))
+#image(seabed)
+ggplot(melted, aes(x=value)) + 
+  geom_histogram(bins=6) + 
+  scale_y_log10() +
+  labs(title="Count of occurances of digits", caption="(there was actually a single '6' in my data")
+
+
