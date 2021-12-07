@@ -55,6 +55,6 @@ for(n in 1:nrow(vent_points)){
 ggplot(melted, aes(x=value)) + 
   geom_histogram(bins=6) + 
   scale_y_log10() +
-  labs(title="Count of occurances of digits", caption="(there was actually a single '6' in my data")
+  labs(title="Count of overlaps of lines", caption="(there was actually a single '6' in my data")
 
 
