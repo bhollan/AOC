@@ -110,5 +110,5 @@ for(bottom in bottoms){
 }
 
 # Part 2
-print(prod(tail(sort(basin_counts), 3)))
+# print(prod(tail(sort(basin_counts), 3)))
 # image(scan)
